@@ -6,7 +6,7 @@
 	"author": "Fabrizio Cristallo",
 	"homepage": "",
 	"dependencies": "",
-	"source": "Documents/projects/dotfiles-temp",
+	"source": "https://github.com/fcristallocagnoli/dotfiles-temp.git",
 	"subfolder": "dotfiles",
 	"setupscript":"setup.sh",
 	"restore":[],
