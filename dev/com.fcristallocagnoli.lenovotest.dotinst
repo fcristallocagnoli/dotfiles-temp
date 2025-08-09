@@ -1,0 +1,14 @@
+{
+	"name": "Lenovo Test DEV",
+	"id": "com.fcristallocagnoli.lenovotest.dev",
+	"description": "Lenovo dotfiles test",
+	"version":"0.1",
+	"author": "Fabrizio Cristallo",
+	"homepage": "",
+	"dependencies": "",
+	"source": "Documents/projects/dotfiles-temp",
+	"subfolder": "dotfiles",
+	"setupscript":"setup.sh",
+	"restore":[],
+	"settings":[]
+}

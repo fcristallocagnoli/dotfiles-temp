@@ -1,0 +1,193 @@
+* {
+    border: none;
+    border-radius: 0;
+    font-family: "JetBrainsMono Nerd Font";
+    font-weight: bold;
+    font-size: 16px;
+    min-height: 0;
+}
+
+window#waybar {
+    background: rgba(21, 18, 27, 0);
+    color: #cdd6f4;
+}
+
+tooltip {
+    background: #1e1e2e;
+    opacity: 0.9;
+    border-radius: 10px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: #11111b;
+}
+
+tooltip label{
+    color: #cdd6f4;
+}
+
+/* Default color: cuando hay algo dentro, pero no esta seleccionado */
+#workspaces button {
+    color: #a6adc8;
+    padding: 0px 5px;
+    margin: 0px 2.5px;
+}
+
+/* Cuando esta seleccionado y hay algo */
+#workspaces button.active {
+    color: #65a0ff;
+}
+
+/* Cuando no hay nada */
+#workspaces button.empty {
+    color: #313244;
+}
+
+/* Cuando esta seleccionado y no hay nada */
+/* Es necesario especificarlo, no funciona sino */
+#workspaces button.active.empty {
+    color: #65a0ff;
+}
+
+#workspaces button.focused {
+    /* cuando ocurre ??? */
+    color: #a6adc8;
+    background: #eba0ac;
+    border-radius: 10px;
+}
+
+/* Cuando se genera contenido en el workspace */
+#workspaces button.urgent {
+    /* cambiar ¿? */
+    color: #11111b;
+    background: #a6e3a1;
+    border-radius: 10px;
+}
+
+#workspaces button:hover {
+    background: #11111b;
+    color: #cdd6f4;
+    border-radius: 10px;
+}
+
+/* Estilo básico */
+#custom-logo,
+#custom-lock_screen,
+#custom-light_dark,
+#custom-power_btn,
+#custom-weather,
+#window,
+#cpu,
+#disk,
+#custom-updates,
+#memory,
+#clock,
+#battery,
+#pulseaudio,
+#workspaces,
+#tray,
+#temperature,
+#workspaces,
+#backlight {
+    background: #1e1e2e;
+    padding: 0px 10px;
+    margin: 10px 0px 3px 0px;
+}
+
+/* Los que hacen esquina izquierda */
+#clock, #cpu, #backlight, #tray {
+    border-radius: 10px 0px 0px 10px;
+    margin-left: 5px;
+}
+
+/* Los que hacen esquina derecha */
+#custom-updates, #disk, #pulseaudio.microphone, #custom-power_btn {
+    border-radius: 0px 10px 10px 0px;
+    margin-right: 5px;
+}
+
+/* Para que no este tan separado de la fecha */
+#custom-updates {
+    padding-left: 2.5px;
+}
+
+/* Los que están solos */
+#custom-logo, #workspaces, #battery {
+    border-radius: 10px;
+    margin: 10px 5px 3px;
+}
+
+/* Elemento más a la izquierda */
+#custom-logo {
+    margin-left: 10px;
+}
+
+#custom-logo {
+    padding-right: 15px;
+    border-radius: 10px;
+}
+
+/* Elemento más a la derecha */
+#custom-power_btn {
+    margin-right: 10px;
+}
+
+#custom-power_btn {
+    padding-right: 15px;
+}
+
+/* Hovers */
+
+#custom-logo:hover {
+    color: #65a0ff;
+    /* color: #84a9c0; */
+}
+
+#custom-updates:hover {
+    color: #ffd3b6;
+    /* color: #f4a261; */
+}
+
+#cpu:hover {
+    color: #b5ead7;
+    /* color: #9ec3a8; */
+}
+
+#memory:hover {
+    color: #f8c8dc;
+    /* color: #efa7a7; */
+    /* color: #9b30ff; */
+}
+
+#disk:hover {
+    color: #fdfd96;
+    /* color: #eec170; */
+}
+
+#custom-power_btn:hover {
+    color: #ff9aa2;
+    /* color: #e57373; */
+}
+
+
+/* Misc */
+
+#temperature.critical {
+    color: #e92d4d;
+}
+
+#pulseaudio {
+    color: #89b4fa;
+    border-left: 0px;
+    border-right: 0px;
+}
+
+#pulseaudio.microphone {
+    color: #cba6f7;
+    border-left: 0px;
+    border-right: 0px;
+}
+
+#battery {
+    color: #a6e3a1;
+    border-left: 0px;
+}

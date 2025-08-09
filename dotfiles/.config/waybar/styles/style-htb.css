@@ -1,0 +1,173 @@
+* {
+    border: none;
+    border-radius: 0;
+    font-family: "JetBrainsMono Nerd Font";
+    font-weight: bold;
+    font-size: 16px;
+    min-height: 0;
+}
+
+window#waybar {
+    background: rgba(21, 18, 27, 0);
+    color: #cdd6f4;
+}
+
+tooltip {
+    background: #1e1e2e;
+    opacity: 0.9;
+    border-radius: 10px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: #11111b;
+}
+
+tooltip label{
+    color: #cdd6f4;
+}
+
+/* Default color: cuando hay algo dentro, pero no esta seleccionado */
+#workspaces button {
+    color: #a6adc8;
+    padding: 0px 5px;
+    margin: 0px 2.5px;
+}
+
+/* Cuando esta seleccionado y hay algo */
+#workspaces button.active {
+    color: #9fef00;
+}
+
+/* Cuando no hay nada */
+#workspaces button.empty {
+    color: #262626;
+}
+
+/* Cuando esta seleccionado y no hay nada */
+/* Es necesario especificarlo, no funciona sino */
+#workspaces button.active.empty {
+    color: #9fef00;
+}
+
+#workspaces button.focused {
+    /* cuando ocurre ??? */
+    color: #a6adc8;
+    background: #eba0ac;
+    border-radius: 10px;
+}
+
+/* Cuando se genera contenido en el workspace */
+#workspaces button.urgent {
+    /* cambiar ¿? */
+    color: #11111b;
+    background: #a6e3a1;
+    border-radius: 10px;
+}
+
+#workspaces button:hover {
+    background: #11111b;
+    color: #cdd6f4;
+    border-radius: 10px;
+}
+
+/* Estilo básico */
+#custom-logo,
+#network,
+#network.htb,
+#custom-htb_target_ip,
+#custom-power_btn,
+#window,
+#clock,
+#tray,
+#workspaces,
+#custom-power,
+/* se supone que se puede agrupar con .not-power, pero no funciona */
+#custom-quit,
+#custom-lock,
+#custom-reboot
+{
+    background: #3f3f3f;
+    opacity: 1;
+    padding: 0px 10px;
+    margin: 10px 0px 3px 0px;
+}
+
+/* Los que hacen esquina izquierda */
+#custom-lock_screen, #backlight, #cpu {
+    border-radius: 10px 0px 0px 10px;
+    margin-left: 5px;
+}
+
+/* Los que hacen esquina derecha */
+/* #custom-light_dark {
+    border-radius: 0px 10px 10px 0px;
+    margin-right: 5px;
+} */
+
+/* Los que están solos */
+#custom-logo, #network, #network.htb, #workspaces, #custom-htb_target_ip, #custom-power_btn, #clock, #tray {
+    border-radius: 10px;
+    margin: 10px 5px 3px;
+}
+
+/* Elemento más a la izquierda */
+
+#custom-logo {
+    margin-left: 10px;
+}
+
+#custom-logo {
+    padding-right: 15px;
+    border-radius: 10px;
+}
+
+/* Elemento más a la derecha */
+
+#custom-power_btn {
+    margin-right: 10px;
+}
+
+#custom-power_btn {
+    padding-right: 15px;
+    border-radius: 10px;
+}
+
+/* Hovers */
+
+#custom-logo:hover {
+    color: #9fef00;
+}
+
+#custom-power_btn:hover {
+    color: #ff3b3b;
+}
+
+
+#network {
+    /* color: #89b4fa; */
+    color: #0d6efd;
+    border-left: 0px;
+    border-right: 0px;
+}
+
+#network.htb {
+    color: #9fef00;
+}
+
+#custom-htb_target_ip {
+    color: #ff3b3b;
+}
+
+#paleta {
+    color: #0d6efd;
+    color: #9fef00;
+    color: #ff9800;
+    color: #ff3b3b;
+    color: #ff1e00;
+    color: #ff1744;
+    color: #8b0000;
+    color: #b22222;
+    color: #c0392b;
+    color: #9b30ff;
+    color: #f5f5f5;
+    color: #121e3b;
+}
